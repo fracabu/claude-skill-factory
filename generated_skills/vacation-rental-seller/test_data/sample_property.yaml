@@ -1,0 +1,80 @@
+# La Tua Casa Vacanze - Dati Esempio
+# Modifica con i dati reali della tua proprietà
+
+property:
+  name: "Casa Trastevere Vista Cupole"
+  zona: "Trastevere"
+  indirizzo_approssimativo: "Via della Scala"  # Non condividere indirizzo esatto pubblicamente
+
+tipologia:
+  tipo: "Appartamento"
+  camere: 2
+  bagni: 1
+  mq: 65
+  piano: 3
+  ascensore: false
+
+capacità:
+  max_ospiti: 4
+  letti:
+    - "1 matrimoniale"
+    - "1 divano letto doppio"
+
+prezzi:
+  base_notte: 120
+  pulizie: 50
+  min_notti: 2
+
+punti_forza:
+  - "Terrazza privata 15mq con vista cupole di Roma"
+  - "Completamente ristrutturato 2024"
+  - "Silenzioso - camera da letto su cortile interno"
+  - "Cucina attrezzata con lavastoviglie"
+  - "Aria condizionata in ogni stanza"
+  - "Smart TV con Netflix"
+  - "Lavatrice in appartamento"
+  - "Caffettiera Nespresso con capsule omaggio"
+
+posizione:
+  distanza_metro: "8 min a piedi (Trastevere/Tram 8)"
+  attrazioni:
+    "Piazza Santa Maria in Trastevere": "3 min a piedi"
+    "Colosseo": "15 min (bus 780)"
+    "Vaticano/San Pietro": "20 min (tram 8)"
+    "Campo de' Fiori": "12 min a piedi"
+    "Pantheon": "18 min a piedi"
+    "Fontana di Trevi": "25 min a piedi"
+
+ristoranti_consigliati:
+  - "Da Enzo al 29: 2 min (prenotare!)"
+  - "Tonnarello: 5 min"
+  - "Supplì Roma: 3 min (migliori supplì)"
+
+target_ideale:
+  - "Coppie romantiche"
+  - "Famiglie piccole (2 adulti + 2 bambini)"
+  - "Amici in viaggio insieme"
+
+gap_da_riempire:
+  - periodo: "15-18 Gennaio 2025"
+    notti: 3
+    note: "Bassa stagione, difficile da vendere"
+  - periodo: "22-25 Gennaio 2025"
+    notti: 3
+    note: "Infrasettimanale"
+  - periodo: "3-5 Febbraio 2025"
+    notti: 2
+    note: "Solo 2 notti, minimo solitamente è 3"
+
+annuncio_attuale:
+  titolo: "Bel appartamento a Trastevere"
+  problemi:
+    - "Titolo generico, non distintivo"
+    - "Descrizione troppo lunga"
+    - "Non menziona la terrazza nel titolo"
+    - "Foto della terrazza non è la prima"
+
+recensioni:
+  media_stelle: 4.8
+  numero_recensioni: 47
+  ultima_recensione_negativa: "Rumore il venerdì sera"

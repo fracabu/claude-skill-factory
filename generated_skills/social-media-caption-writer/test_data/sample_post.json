@@ -1,0 +1,14 @@
+{
+  "content_type": "image",
+  "content_description": "Photo of a new eco-friendly product packaging redesign",
+  "key_message": "We're committed to sustainability without compromising quality",
+  "brand_name": "GreenBrand Co",
+  "target_platforms": ["instagram", "linkedin", "twitter"],
+  "brand_voice": "professional but approachable",
+  "goal": "awareness",
+  "hashtag_suggestions": ["sustainability", "ecofriendly", "greenpackaging"],
+  "constraints": {
+    "include": ["eco-friendly", "sustainable"],
+    "avoid": ["cheap", "plastic"]
+  }
+}

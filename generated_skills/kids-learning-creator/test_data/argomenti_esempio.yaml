@@ -1,0 +1,124 @@
+# Argomenti Esempio per Kids Learning Creator
+# Usa questi come ispirazione o test
+
+argomenti_scienze:
+  - nome: "Come funziona il corpo umano - Il Cuore"
+    eta: 10
+    livello: intermedio
+    elementi:
+      - esperimento: "Misura i battiti cardiaci prima e dopo aver corso"
+      - quiz: 5 domande sul sistema circolatorio
+      - immagini: diagramma cuore semplificato
+
+  - nome: "Il Ciclo dell'Acqua"
+    eta: 9
+    livello: base
+    elementi:
+      - esperimento: "Crea una mini nuvola in un barattolo"
+      - attivita: "Disegna il ciclo dell'acqua"
+
+  - nome: "Elettricità Statica"
+    eta: 10
+    livello: intermedio
+    elementi:
+      - esperimento: "Palloncino che attira i capelli"
+      - esperimento: "Piegare l'acqua con l'elettricità"
+
+argomenti_spazio:
+  - nome: "Il Sistema Solare"
+    eta: 10
+    livello: intermedio
+    note: "Include tutti i pianeti con curiosità"
+
+  - nome: "Perché c'è il giorno e la notte?"
+    eta: 8
+    livello: base
+    elementi:
+      - esperimento: "Torcia + palla = simulazione Terra-Sole"
+
+  - nome: "La Luna e le sue Fasi"
+    eta: 10
+    livello: intermedio
+    elementi:
+      - attivita: "Calendario lunare per un mese"
+      - esperimento: "Biscotti Oreo per le fasi lunari"
+
+argomenti_storia:
+  - nome: "Gli Antichi Egizi"
+    eta: 10
+    livello: intermedio
+    elementi:
+      - attivita: "Costruisci una piramide di carta"
+      - quiz: "Vero/Falso sui faraoni"
+
+  - nome: "I Romani"
+    eta: 10
+    livello: intermedio
+    note: "Perfetto per bambini che vivono a Roma!"
+    elementi:
+      - attivita: "Mappa di Roma antica vs moderna"
+
+  - nome: "I Cavalieri del Medioevo"
+    eta: 9
+    livello: base
+    elementi:
+      - attivita: "Disegna il tuo stemma araldico"
+
+argomenti_natura:
+  - nome: "Come crescono le piante"
+    eta: 8
+    livello: base
+    elementi:
+      - esperimento: "Pianta un fagiolo in un bicchiere"
+
+  - nome: "Gli Animali e i loro Habitat"
+    eta: 9
+    livello: base
+    elementi:
+      - quiz: "Abbina l'animale al suo habitat"
+
+  - nome: "Il Riciclo e l'Ambiente"
+    eta: 10
+    livello: intermedio
+    elementi:
+      - attivita: "Crea qualcosa con materiali riciclati"
+
+argomenti_matematica:
+  - nome: "Le Frazioni nella Vita Quotidiana"
+    eta: 10
+    livello: intermedio
+    elementi:
+      - attivita: "Pizza delle frazioni"
+      - quiz: "Problemi con dolci e pizza"
+
+  - nome: "Geometria - Le Forme Intorno a Noi"
+    eta: 9
+    livello: base
+    elementi:
+      - attivita: "Caccia alle forme in casa"
+
+argomenti_tecnologia:
+  - nome: "Come Funziona Internet"
+    eta: 10
+    livello: intermedio
+    note: "Spiegazione semplice con analogie"
+
+  - nome: "I Robot e l'Intelligenza Artificiale"
+    eta: 10
+    livello: avanzato
+    elementi:
+      - attivita: "Programma un robot umano (gioco)"
+
+# Richiesta esempio completa
+richiesta_test:
+  argomento: "I Vulcani"
+  eta: 10
+  livello: intermedio
+  lingua: italiano
+  richieste_specifiche:
+    - esperimento_casa: true
+    - quiz_numero: 5
+    - immagini_ai: true
+    - attivita_creativa: true
+    - vocabolario: true
+    - sfida_finale: true

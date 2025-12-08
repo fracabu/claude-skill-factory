@@ -1,0 +1,39 @@
+# Sample Presentation Request
+# Use this as input for the presentation-generator skill
+
+topic: "Digital Marketing Trends 2025"
+
+audience: "Marketing managers at medium-sized companies"
+
+goal: "educate"
+
+duration: "15 min"
+
+style: "corporate"
+
+slides: 12
+
+key_points:
+  - "AI-powered personalization"
+  - "Video content dominance"
+  - "Privacy-first marketing"
+  - "Voice search optimization"
+  - "Sustainability messaging"
+
+brand_colors:
+  primary: "#2563EB"    # Blue
+  secondary: "#1E40AF"  # Dark Blue
+  accent: "#10B981"     # Green
+
+tone: "professional but approachable, use data to support claims"
+
+include:
+  - "At least 2 data/statistics slides"
+  - "Case study or example"
+  - "Actionable recommendations"
+  - "Resource list at the end"
+
+avoid:
+  - "Too technical jargon"
+  - "More than 5 bullets per slide"
+  - "Slides without visual direction"
