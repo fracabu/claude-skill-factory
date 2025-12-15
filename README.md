@@ -1,78 +1,65 @@
-# Claude Skill Factory
+<h1 align="center">Claude Skill Factory</h1>
+<h3 align="center">Generate Claude Code Agent Skills at scale</h3>
 
-**Production-ready framework for generating Claude Code Agent Skills at scale**
+<p align="center">
+  <em>Transform domain expertise into reusable, shareable AI capabilities</em>
+</p>
 
-[English](#english) | [Italiano](#italiano)
+<p align="center">
+  <img src="https://img.shields.io/badge/Claude_Code-8B5CF6?style=flat-square&logo=anthropic&logoColor=white" alt="Claude Code" />
+  <img src="https://img.shields.io/badge/Skills-Framework-blue?style=flat-square" alt="Skills" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+</p>
+
+<p align="center">
+  :gb: <a href="#english">English</a> | :it: <a href="#italiano">Italiano</a>
+</p>
 
 ---
 
-## English
+<a name="english"></a>
+## :gb: English
 
 ### Overview
 
-A production-ready framework for generating [Claude Code Agent Skills](https://code.claude.com/docs/en/skills) at scale. Transform your domain expertise into reusable, shareable AI capabilities that Claude autonomously invokes when relevant to your requests.
+A production-ready framework for generating [Claude Code Agent Skills](https://code.claude.com/docs/en/skills) at scale. Skills are modular capabilities that Claude autonomously invokes when relevant to your requests.
 
-### Key Features
+### Features
 
 - **Skill Generation at Scale** - Create multiple skills from a single mega-prompt
-- **Multi-Platform Support** - Works in both Claude Code CLI and browser
+- **Multi-Platform Support** - Works in Claude Code CLI and browser
 - **Team Collaboration** - Share expertise across teams via git
 - **Composable Skills** - Combine multiple skills for complex workflows
-- **Browser Import** - ZIP packages ready for direct browser upload
-
-### What Are Agent Skills?
-
-Agent Skills are modular capabilities that extend Claude's functionality. Each skill packages expertise into a discoverable format that Claude autonomously invokes when relevant.
-
-**Benefits:**
-- Reduce repetitive prompting
-- Share expertise across teams via git
-- Compose multiple skills for complex workflows
-
-### Tech Stack
-
-- **Claude Code** - AI agent runtime
-- **YAML Frontmatter** - Skill metadata specification
-- **Python** - Optional helper scripts
-- **ZIP Packaging** - Browser import format
+- **Browser Import** - ZIP packages ready for direct upload
 
 ### Quick Start
 
 ```yaml
-# 1. Define your requirements
+# 1. Define requirements
 BUSINESS_DOMAIN: "E-commerce"
-
 USE_CASES:
   - "Analyze product reviews for sentiment"
-  - "Generate SEO-optimized product descriptions"
-  - "Calculate conversion rate metrics"
-
+  - "Generate SEO-optimized descriptions"
 NUM_SKILLS: 3
-OVERLAP_PREFERENCE: "complementary"
 COMPLEXITY_LEVEL: "intermediate"
 ```
 
 ```bash
 # 2. Generate skills
-Use SKILL_FACTORY_PROMPT.md to generate skills for the above requirements
+Use SKILL_FACTORY_PROMPT.md to generate skills
 
-# 3. Install generated skills
-# Personal (available in all projects)
-cp -r generated_skills/my-skill ~/.claude/skills/
-
-# Project-specific (shared via git)
-cp -r generated_skills/my-skill .claude/skills/
+# 3. Install
+cp -r generated_skills/my-skill ~/.claude/skills/     # Personal
+cp -r generated_skills/my-skill .claude/skills/       # Project
 ```
 
 ### Skill Anatomy
 
-Every skill requires a `SKILL.md` file with YAML frontmatter:
-
 ```yaml
 ---
 name: my-skill-name
-description: What this skill does and WHEN Claude should use it
-allowed-tools: Read, Grep, Glob  # Optional tool restrictions
+description: What this skill does and WHEN to use it
+allowed-tools: Read, Grep, Glob
 ---
 
 # My Skill Name
@@ -81,171 +68,73 @@ allowed-tools: Read, Grep, Glob  # Optional tool restrictions
 - What the skill can do
 
 ## Instructions
-1. Step-by-step guidance for Claude
+1. Step-by-step guidance
 ```
-
-| Field | Requirements |
-|-------|-------------|
-| `name` | kebab-case, max 64 chars, lowercase letters/numbers/hyphens only |
-| `description` | Max 1024 chars. Must explain **what** AND **when** to use |
-| `allowed-tools` | Optional. Restricts which tools Claude can use |
 
 ### Complexity Levels
 
 | Level | Output |
 |-------|--------|
-| `basic` | SKILL.md only, simple prompts |
-| `intermediate` | SKILL.md + 1-2 Python scripts |
-| `advanced` | Multi-file with reference docs, validation, complex logic |
-
-### Example Skills Included
-
-- **blog-post-outline-generator** - SEO-optimized blog outlines
-- **social-media-caption-writer** - Platform-specific captions
-- **presentation-generator** - Structured slide decks
-- **vacation-rental-seller** - Listing optimization
-- **kids-learning-creator** - Age-appropriate educational content
-
-### Project Structure
-
-```
-claude-skill-factory/
-├── SKILL_FACTORY_PROMPT.md
-├── claude_skill_instructions.md
-├── claude_skills_examples.md/
-│   ├── analyzing-financial-statements.md
-│   ├── applying-brand-guidelines.md
-│   └── *.py
-└── generated_skills/
-    └── {skill-name}/
-        ├── SKILL.md
-        ├── sample_prompt.md
-        └── {skill-name}.zip
-```
-
-### License
-
-MIT License
+| `basic` | SKILL.md only |
+| `intermediate` | SKILL.md + Python scripts |
+| `advanced` | Multi-file with validation |
 
 ---
 
-## Italiano
+<a name="italiano"></a>
+## :it: Italiano
 
 ### Panoramica
 
-Un framework production-ready per generare [Claude Code Agent Skills](https://code.claude.com/docs/en/skills) su larga scala. Trasforma la tua competenza di dominio in capacita AI riutilizzabili e condivisibili che Claude invoca autonomamente quando rilevanti per le tue richieste.
+Un framework production-ready per generare [Claude Code Agent Skills](https://code.claude.com/docs/en/skills) su larga scala. Le Skills sono capacita modulari che Claude invoca autonomamente quando rilevanti.
 
-### Funzionalita Principali
+### Funzionalita
 
 - **Generazione Skill su Scala** - Crea multiple skill da un singolo mega-prompt
-- **Supporto Multi-Piattaforma** - Funziona sia in Claude Code CLI che nel browser
-- **Collaborazione Team** - Condividi competenze tra team via git
-- **Skill Componibili** - Combina multiple skill per workflow complessi
-- **Import Browser** - Pacchetti ZIP pronti per upload diretto nel browser
-
-### Cosa Sono le Agent Skills?
-
-Le Agent Skills sono capacita modulari che estendono le funzionalita di Claude. Ogni skill impacchetta competenze in un formato scopribile che Claude invoca autonomamente quando rilevante.
-
-**Benefici:**
-- Riduci i prompt ripetitivi
-- Condividi competenze tra team via git
-- Componi multiple skill per workflow complessi
-
-### Stack Tecnologico
-
-- **Claude Code** - Runtime agenti AI
-- **YAML Frontmatter** - Specifica metadati skill
-- **Python** - Script helper opzionali
-- **ZIP Packaging** - Formato import browser
+- **Supporto Multi-Piattaforma** - Funziona in Claude Code CLI e browser
+- **Collaborazione Team** - Condividi competenze via git
+- **Skill Componibili** - Combina skill per workflow complessi
+- **Import Browser** - Pacchetti ZIP pronti per upload
 
 ### Avvio Rapido
 
 ```yaml
-# 1. Definisci i requisiti
+# 1. Definisci requisiti
 BUSINESS_DOMAIN: "E-commerce"
-
 USE_CASES:
-  - "Analizza recensioni prodotti per sentiment"
-  - "Genera descrizioni prodotto SEO-ottimizzate"
-  - "Calcola metriche tasso di conversione"
-
+  - "Analizza recensioni per sentiment"
+  - "Genera descrizioni SEO-ottimizzate"
 NUM_SKILLS: 3
-OVERLAP_PREFERENCE: "complementary"
 COMPLEXITY_LEVEL: "intermediate"
 ```
 
 ```bash
-# 2. Genera le skill
-Usa SKILL_FACTORY_PROMPT.md per generare skill per i requisiti sopra
+# 2. Genera skill
+Usa SKILL_FACTORY_PROMPT.md per generare skill
 
-# 3. Installa le skill generate
-# Personali (disponibili in tutti i progetti)
-cp -r generated_skills/my-skill ~/.claude/skills/
-
-# Specifiche progetto (condivise via git)
-cp -r generated_skills/my-skill .claude/skills/
+# 3. Installa
+cp -r generated_skills/my-skill ~/.claude/skills/     # Personale
+cp -r generated_skills/my-skill .claude/skills/       # Progetto
 ```
 
-### Anatomia di una Skill
-
-Ogni skill richiede un file `SKILL.md` con frontmatter YAML:
-
-```yaml
----
-name: my-skill-name
-description: Cosa fa questa skill e QUANDO Claude dovrebbe usarla
-allowed-tools: Read, Grep, Glob  # Restrizioni tool opzionali
----
-
-# Nome Skill
-
-## Capacita
-- Cosa puo fare la skill
-
-## Istruzioni
-1. Guida passo-passo per Claude
-```
-
-| Campo | Requisiti |
-|-------|-----------|
-| `name` | kebab-case, max 64 caratteri, solo lettere minuscole/numeri/trattini |
-| `description` | Max 1024 caratteri. Deve spiegare **cosa** E **quando** usare |
-| `allowed-tools` | Opzionale. Limita quali tool Claude puo usare |
-
-### Livelli di Complessita
+### Livelli Complessita
 
 | Livello | Output |
 |---------|--------|
-| `basic` | Solo SKILL.md, prompt semplici |
-| `intermediate` | SKILL.md + 1-2 script Python |
-| `advanced` | Multi-file con docs di riferimento, validazione, logica complessa |
+| `basic` | Solo SKILL.md |
+| `intermediate` | SKILL.md + script Python |
+| `advanced` | Multi-file con validazione |
 
-### Skill di Esempio Incluse
+---
 
-- **blog-post-outline-generator** - Outline blog SEO-ottimizzati
-- **social-media-caption-writer** - Caption specifiche per piattaforma
-- **presentation-generator** - Slide deck strutturati
-- **vacation-rental-seller** - Ottimizzazione annunci
-- **kids-learning-creator** - Contenuti educativi per eta
+## License
 
-### Struttura Progetto
+MIT
 
-```
-claude-skill-factory/
-├── SKILL_FACTORY_PROMPT.md
-├── claude_skill_instructions.md
-├── claude_skills_examples.md/
-│   ├── analyzing-financial-statements.md
-│   ├── applying-brand-guidelines.md
-│   └── *.py
-└── generated_skills/
-    └── {skill-name}/
-        ├── SKILL.md
-        ├── sample_prompt.md
-        └── {skill-name}.zip
-```
+---
 
-### Licenza
-
-MIT License
+<p align="center">
+  <a href="https://github.com/fracabu">
+    <img src="https://img.shields.io/badge/Made_by-fracabu-8B5CF6?style=flat-square" alt="Made by fracabu" />
+  </a>
+</p>
